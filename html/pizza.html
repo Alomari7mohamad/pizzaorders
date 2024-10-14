@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بيتزا</title>
+    <link rel="stylesheet" href="/css/pizza.css">
+    <script src="/js/pizza.js" defer></script>
+</head>
+<body>
+
+    <h1>اختر حجم وإضافات البيتزا</h1>
+
+    <div class="container">
+        <form id="pizza-form">
+            
+            <h2 style="text-align: right;">حجم البيتزا</h2>
+            <div class="form-group size-options">
+                <label class="size-option">
+                    <input type="radio" name="size" value="صغير" required>
+                    <span class="size-option-label">صغير</span>
+                </label>
+                <label class="size-option">
+                    <input type="radio" name="size" value="كبير">
+                    <span class="size-option-label">كبير</span>
+                </label>
+            </div>
+            <hr class="divider">
+
+            <div class="form-group extras-options">
+                <h2 style="text-align: right;">اضافات البيتزا</h2>
+                <div class="extras-container">
+                    <label class="extra-option">
+                        <input type="checkbox" name="extra" value="جبنة"> جبنة 
+                        <select name="pieces_cheese" class="quantity-select">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </label>
+                    <label class="extra-option">
+                        <input type="checkbox" name="extra" value="جبنة زيادة 5"> 5 جبنة إضافية
+                        <select name="pieces_cheese" class="quantity-select">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </label>
+                    <label class="extra-option">
+                        <input type="checkbox" name="extra" value="جبنة زيادة 10"> 10 جبنة إضافية
+                        <select name="pieces_cheese_10" class="quantity-select">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </label>
+                    <label class="extra-option">
+                        <input type="checkbox" name="extra" value="زيتون"> زيتون
+                        <select name="pieces_olive" class="quantity-select">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </label>
+                    <label class="extra-option">
+                        <input type="checkbox" name="extra" value="ذرة"> ذرة
+                        <select name="pieces_corn" class="quantity-select">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </label>
+                    <label class="extra-option">
+                        <input type="checkbox" name="extra" value="فقع"> فقع
+                        <select name="pieces_pickles" class="quantity-select">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </label>
+                    <label class="extra-option">
+                    <input type="checkbox" name="extra" value="بصل"> بصل
+                    <select name="pieces_onions" class="quantity-select">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+                <label class="extra-option">
+                    <input type="checkbox" name="extra" value="(جمبا)فلفل احمر"> (جمبا)فلفل احمر
+                    <select name="pieces_green_peppers" class="quantity-select">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+                <label class="extra-option">
+                    <input type="checkbox" name="extra" value="تونة"> تونة
+                    <select name="pieces_tuna" class="quantity-select">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+                <label class="extra-option">
+                    <input type="checkbox" name="extra" value="زيتون اسود"> زيتون اسود
+                    <select name="pieces_black_olives" class="quantity-select">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+                <label class="extra-option">
+                    <input type="checkbox" name="extra" value="حار(חריף)"> حار(חריף)
+                    <select name="pieces_spicy" class="quantity-select">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+            </div>
+            
+            <hr class="divider">
+
+            <div class="form-group pieces-options">
+                <h2 style="text-align: right;">عدد القطع</h2>
+                <div class="pieces-option">
+                    <label>
+                        <input type="radio" name="pieces" value="8" required>
+                        <span class="pieces-option-label">8</span>
+                    </label>
+                </div>
+                <div class="pieces-option">
+                    <label>
+                        <input type="radio" name="pieces" value="10">
+                        <span class="pieces-option-label">10</span>
+                    </label>
+                </div>
+                <div class="pieces-option">
+                    <label>
+                        <input type="radio" name="pieces" value="12">
+                        <span class="pieces-option-label">12</span>
+                    </label>
+                </div>
+                 <div class="pieces-option">
+                    <label>
+                        <input type="radio" name="pieces" value="16">
+                        <span class="pieces-option-label">16</span>
+                    </label>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="form-group crust-options">
+                <h2 style="text-align: right;">نوع العجينة</h2>
+                <div class="crust-option">
+                    <label>
+                        <input type="radio" name="crust" value="عادي" required>
+                        <span class="crust-option-label">عادي</span>
+                    </label>
+                </div>
+                <div class="crust-option">
+                    <label>
+                        <input type="radio" name="crust" value="رقيق">
+                        <span class="crust-option-label">رقيق</span>
+                    </label>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="form-group">
+                <h2 style="text-align: right;">ملاحظات</h2>
+                <textarea name="notes" rows="4" style="width: 100%;"></textarea>
+            </div>
+
+            
+
+            <button type="submit" id="confirm-button">تأكيد</button>
+
+        </form>
+
+        <br>
+
+        <a href="/html/home.html" class="back-button">العودة إلى الصفحة الرئيسية</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة طلب</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/main.js" defer></script>
+</head>
+<body>
+    <h1>اختر قائمة</h1>
+    <div class="image-container">
+        <a href="/html/pasta.html">
+            <img src="https://png.pngtree.com/png-clipart/20230914/original/pngtree-pasta-salad-vector-png-image_12160061.png" alt="صورة معكرونة">
+        </a>
+        <a href="/html/pizza.html">
+            <img src="https://png.pngtree.com/png-clipart/20230913/original/pngtree-pizza-free-vector-png-image_11075319.png" alt="صورة بيتزا">
+        </a>
+        <a href="/html/salad.html">
+            <img src="https://png.pngtree.com/png-clipart/20230913/original/pngtree-free-salad-vector-png-image_11063045.png" alt="صورة سلطة">
+        </a>
+         <a href="/html/drinks.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBZU2Poa6yCoZUKL9WM1wMUSWYlNvSE5S0rg&s" alt="صورة مشروبات">
+        </a>
+    </div>
+
+    <div class="customer-info">
+        <h2>معلومات الزبون</h2>
+        <label for="customer-name">اسم الزبون:</label>
+        <input type="text" id="customer-name" required>
+        <label for="customer-phone">رقم الهاتف:</label>
+        <input type="tel" id="customer-phone" required>
+    </div>
+
+    <div class="button-container">
+        <button class="print-button" id="print-button" onclick="printOrders()">اطبع الطلبات</button>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,245 @@
+/* إعدادات عامة للجسم */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* تنسيق الحاوية الرئيسية */
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق العناوين */
+h1 {
+  text-align: center;
+  color: #007bff;
+}
+
+h2 {
+  margin-top: 20px;
+  text-align: right; /* تغيير المحاذاة إلى اليمين */
+}
+
+/* فصل بين الأقسام */
+.divider {
+  border: 1px solid red;
+  margin: 20px 0;
+}
+
+/* تنسيق خيارات الحجم */
+.size-options {
+  display: flex;
+  justify-content: space-around;
+}
+
+.size-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.size-option-label {
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, border-color 0.3s;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.size-option input:checked + .size-option-label {
+  background-color: #007bff;
+  color: white;
+}
+
+/* تنسيق خيارات الإضافات */
+.extras-options {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* مساحة إضافية أسفل خيارات الإضافات */
+}
+.quantity-select {
+  margin-left: 10px; /* إزاحة السهم قليلاً لليسار */
+  padding: 5px; /* إضافة padding */
+  border: 1px solid #ced4da; /* حدود السهم */
+  border-radius: 5px; /* زوايا دائرية */
+  font-size: 16px; /* حجم الخط */
+}
+
+.extras-container {
+  background-color: #e9ecef; /* لون خلفية فاتح */
+  padding: 15px; /* حشوة داخلية */
+  border-radius: 8px; /* زوايا دائرية */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* مسافة بين الخيارات */
+}
+
+.extra-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* جعل العناصر في الصف */
+  padding: 10px; /* حشوة داخلية */
+  border: 1px solid #007bff; /* حدود بلون الأزرق */
+  border-radius: 5px; /* زوايا دائرية */
+  background-color: #ffffff; /* لون خلفية أبيض للخيارات */
+  transition: background-color 0.3s; /* تأثير انتقال */
+}
+
+.extra-option:hover {
+  background-color: #007bff; /* تغيير الخلفية عند المرور */
+  color: white; /* تغيير لون الخط */
+}
+
+.quantity-select {
+  margin-left: 10px; /* إزاحة السهم قليلاً لليسار */
+  padding: 5px; /* إضافة padding */
+  border: 1px solid #ced4da; /* حدود السهم */
+  border-radius: 5px; /* زوايا دائرية */
+  font-size: 16px; /* حجم الخط */
+}
+
+
+.extra-item {
+  background-color: #f0f8ff; /* لون خلفية فاتح */
+  border: 2px solid #007bff; /* لون الحدود */
+  border-radius: 10px; /* زوايا مستديرة */
+  padding: 10px;
+  text-align: right; /* محاذاة النص لليمين */
+  transition: background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
+}
+
+.extra-item:hover {
+  background-color: #e7f1ff; /* لون خلفية عند التمرير */
+}
+
+.extra-item input {
+  margin-left: 10px; /* مساحة بين المدخل والنص */
+}
+
+
+/* تنسيق خيارات عدد القطع */
+.pieces-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.pieces-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  margin: 5px;
+}
+
+.pieces-option-label {
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: background-color 0.3s, border-color 0.3s;
+  color: #007bff;
+}
+
+.pieces-option input:checked + .pieces-option-label {
+  background-color: #007bff;
+  color: white;
+}
+
+/* تنسيق خيارات نوع العجينة */
+.crust-options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.crust-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.crust-option-label {
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, border-color 0.3s;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.crust-option input:checked + .crust-option-label {
+  background-color: #007bff;
+  color: white;
+}
+
+/* تنسيق textarea */
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  resize: vertical; /* يسمح بتغيير الحجم عموديًا */
+}
+
+/* تنسيق الأزرار */
+button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none; /* لإزالة الخط السفلي */
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px; /* زيادة حجم الخط */
+  text-align: right;
+}

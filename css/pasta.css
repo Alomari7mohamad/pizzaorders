@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: right;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.checkbox-label {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: background 0.3s;
+}
+
+.checkbox-label:hover {
+    background: #f0f0f0;
+}
+
+/* تصميم الزر */
+.submit-button {
+    display: inline-block;
+    padding: 10px 20px; /* حواف داخلية */
+    background-color: #28a745; /* لون الخلفية */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    border-radius: 5px; /* زوايا مدورة */
+    font-size: 16px; /* حجم الخط */
+    cursor: pointer; /* تغيير المؤشر إلى اليد */
+    transition: background-color 0.3s, transform 0.2s; /* تأثيرات عند التمرير */
+    margin-top: 20px; /* مسافة أعلى الزر */
+}
+
+.submit-button:hover {
+    background-color: #218838; /* لون الخلفية عند التمرير */
+    transform: scale(1.05); /* تكبير طفيف عند التمرير */
+}
+
+.submit-button:focus {
+    outline: none; /* إزالة الإطار عند التركيز */
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #ddd;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background: #ccc;
+}
